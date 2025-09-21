@@ -202,8 +202,8 @@ DEFINE_FUNCTION(ATraPra_U1_PEV2_GMCharacter::execDoMove)
 }
 // ********** End Class ATraPra_U1_PEV2_GMCharacter Function DoMove ********************************
 
-// ********** Begin Class ATraPra_U1_PEV2_GMCharacter Function ShowDamage **************************
-struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage_Statics
+// ********** Begin Class ATraPra_U1_PEV2_GMCharacter Function ShowAgilidad ************************
+struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowAgilidad_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -213,27 +213,27 @@ struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, nullptr, "ShowDamage", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage_Statics::Function_MetaDataParams)},  };
-UFunction* Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage()
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowAgilidad_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, nullptr, "ShowAgilidad", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowAgilidad_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowAgilidad_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowAgilidad()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowAgilidad_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(ATraPra_U1_PEV2_GMCharacter::execShowDamage)
+DEFINE_FUNCTION(ATraPra_U1_PEV2_GMCharacter::execShowAgilidad)
 {
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->ShowDamage();
+	P_THIS->ShowAgilidad();
 	P_NATIVE_END;
 }
-// ********** End Class ATraPra_U1_PEV2_GMCharacter Function ShowDamage ****************************
+// ********** End Class ATraPra_U1_PEV2_GMCharacter Function ShowAgilidad **************************
 
-// ********** Begin Class ATraPra_U1_PEV2_GMCharacter Function ShowHealth **************************
-struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth_Statics
+// ********** Begin Class ATraPra_U1_PEV2_GMCharacter Function ShowDMG *****************************
+struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDMG_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -243,27 +243,27 @@ struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, nullptr, "ShowHealth", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth_Statics::Function_MetaDataParams)},  };
-UFunction* Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth()
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDMG_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, nullptr, "ShowDMG", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDMG_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDMG_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDMG()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDMG_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(ATraPra_U1_PEV2_GMCharacter::execShowHealth)
+DEFINE_FUNCTION(ATraPra_U1_PEV2_GMCharacter::execShowDMG)
 {
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->ShowHealth();
+	P_THIS->ShowDMG();
 	P_NATIVE_END;
 }
-// ********** End Class ATraPra_U1_PEV2_GMCharacter Function ShowHealth ****************************
+// ********** End Class ATraPra_U1_PEV2_GMCharacter Function ShowDMG *******************************
 
-// ********** Begin Class ATraPra_U1_PEV2_GMCharacter Function ShowSpeed ***************************
-struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed_Statics
+// ********** Begin Class ATraPra_U1_PEV2_GMCharacter Function ShowVida ****************************
+struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowVida_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
@@ -273,24 +273,24 @@ struct Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, nullptr, "ShowSpeed", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed_Statics::Function_MetaDataParams)},  };
-UFunction* Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed()
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowVida_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, nullptr, "ShowVida", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowVida_Statics::Function_MetaDataParams), Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowVida_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowVida()
 {
 	static UFunction* ReturnFunction = nullptr;
 	if (!ReturnFunction)
 	{
-		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed_Statics::FuncParams);
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowVida_Statics::FuncParams);
 	}
 	return ReturnFunction;
 }
-DEFINE_FUNCTION(ATraPra_U1_PEV2_GMCharacter::execShowSpeed)
+DEFINE_FUNCTION(ATraPra_U1_PEV2_GMCharacter::execShowVida)
 {
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->ShowSpeed();
+	P_THIS->ShowVida();
 	P_NATIVE_END;
 }
-// ********** End Class ATraPra_U1_PEV2_GMCharacter Function ShowSpeed *****************************
+// ********** End Class ATraPra_U1_PEV2_GMCharacter Function ShowVida ******************************
 
 // ********** Begin Class ATraPra_U1_PEV2_GMCharacter **********************************************
 void ATraPra_U1_PEV2_GMCharacter::StaticRegisterNativesATraPra_U1_PEV2_GMCharacter()
@@ -301,9 +301,9 @@ void ATraPra_U1_PEV2_GMCharacter::StaticRegisterNativesATraPra_U1_PEV2_GMCharact
 		{ "DoJumpStart", &ATraPra_U1_PEV2_GMCharacter::execDoJumpStart },
 		{ "DoLook", &ATraPra_U1_PEV2_GMCharacter::execDoLook },
 		{ "DoMove", &ATraPra_U1_PEV2_GMCharacter::execDoMove },
-		{ "ShowDamage", &ATraPra_U1_PEV2_GMCharacter::execShowDamage },
-		{ "ShowHealth", &ATraPra_U1_PEV2_GMCharacter::execShowHealth },
-		{ "ShowSpeed", &ATraPra_U1_PEV2_GMCharacter::execShowSpeed },
+		{ "ShowAgilidad", &ATraPra_U1_PEV2_GMCharacter::execShowAgilidad },
+		{ "ShowDMG", &ATraPra_U1_PEV2_GMCharacter::execShowDMG },
+		{ "ShowVida", &ATraPra_U1_PEV2_GMCharacter::execShowVida },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -341,37 +341,37 @@ struct Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n *  A simple player-controllable third person character\n *  Implements a controllable orbiting camera\n */// Crea la clase del personaje y la asigna como p\xef\xbf\xbd""blica.\n" },
+		{ "Comment", "// Crea la clase del personaje y la asigna como p\xef\xbf\xbd""blica.\n" },
 #endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "TraPra_U1_PEV2_GMCharacter.h" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "A simple player-controllable third person character\nImplements a controllable orbiting camera\n// Crea la clase del personaje y la asigna como p\xef\xbf\xbd""blica." },
+		{ "ToolTip", "Crea la clase del personaje y la asigna como p\xef\xbf\xbd""blica." },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Components" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Camera boom positioning the camera behind the character */// Determina las propiedades de Unreal de CameraBoom\n" },
+		{ "Comment", "/** posiciona el brazo de la camara detras del personaje */" },
 #endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Camera boom positioning the camera behind the character // Determina las propiedades de Unreal de CameraBoom" },
+		{ "ToolTip", "posiciona el brazo de la camara detras del personaje" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Components" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Follow camera */// Determina las propiedades de Unreal de FollowCamera\n" },
+		{ "Comment", "/** seguimiento de camara */" },
 #endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Follow camera // Determina las propiedades de Unreal de FollowCamera" },
+		{ "ToolTip", "seguimiento de camara" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[] = {
@@ -381,64 +381,64 @@ struct Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JumpAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn saltar\n" },
+		{ "Comment", "/** Jump */" },
 #endif
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn saltar" },
+		{ "ToolTip", "Jump" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MoveAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Move Input Action */// Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn moverse\n" },
+		{ "Comment", "/** Move Input */" },
 #endif
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Move Input Action // Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn moverse" },
+		{ "ToolTip", "Move Input" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Look Input Action */// Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn mirar\n" },
+		{ "Comment", "/** Mirar Input  */" },
 #endif
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Look Input Action // Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn mirar" },
+		{ "ToolTip", "Mirar Input" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MouseLookAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Mouse Look Input Action */// Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn mirar con el mouse\n" },
+		{ "Comment", "/** Mirar con Mouse  Input */" },
 #endif
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Mouse Look Input Action // Determina las propiedades de de Unreal de la acci\xef\xbf\xbdn mirar con el mouse" },
+		{ "ToolTip", "Mirar con Mouse  Input" },
 #endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowHealthAction_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowVidaAction_MetaData[] = {
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowSpeedAction_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowAgilidadAction_MetaData[] = {
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowDamageAction_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowDMGAction_MetaData[] = {
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Vida_MetaData[] = {
 		{ "Category", "Stats" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Agilidad_MetaData[] = {
 		{ "Category", "Stats" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Damage_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DMG_MetaData[] = {
 		{ "Category", "Stats" },
 		{ "ModuleRelativePath", "TraPra_U1_PEV2_GMCharacter.h" },
 	};
@@ -450,12 +450,12 @@ struct Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShowHealthAction;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShowSpeedAction;
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShowDamageAction;
-	static const UECodeGen_Private::FIntPropertyParams NewProp_Health;
-	static const UECodeGen_Private::FIntPropertyParams NewProp_Speed;
-	static const UECodeGen_Private::FIntPropertyParams NewProp_Damage;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShowVidaAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShowAgilidadAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShowDMGAction;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Vida;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Agilidad;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_DMG;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -463,9 +463,9 @@ struct Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics
 		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_DoJumpStart, "DoJumpStart" }, // 2863942125
 		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_DoLook, "DoLook" }, // 4255174852
 		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_DoMove, "DoMove" }, // 2160224072
-		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDamage, "ShowDamage" }, // 482378092
-		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowHealth, "ShowHealth" }, // 187529707
-		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowSpeed, "ShowSpeed" }, // 3393647777
+		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowAgilidad, "ShowAgilidad" }, // 3091128695
+		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowDMG, "ShowDMG" }, // 998023648
+		{ &Z_Construct_UFunction_ATraPra_U1_PEV2_GMCharacter_ShowVida, "ShowVida" }, // 523024223
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -480,12 +480,12 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_MoveAction = { "MoveAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, MoveAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveAction_MetaData), NewProp_MoveAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowHealthAction = { "ShowHealthAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, ShowHealthAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShowHealthAction_MetaData), NewProp_ShowHealthAction_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowSpeedAction = { "ShowSpeedAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, ShowSpeedAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShowSpeedAction_MetaData), NewProp_ShowSpeedAction_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowDamageAction = { "ShowDamageAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, ShowDamageAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShowDamageAction_MetaData), NewProp_ShowDamageAction_MetaData) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, Health), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, Speed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Speed_MetaData), NewProp_Speed_MetaData) };
-const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, Damage), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Damage_MetaData), NewProp_Damage_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowVidaAction = { "ShowVidaAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, ShowVidaAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShowVidaAction_MetaData), NewProp_ShowVidaAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowAgilidadAction = { "ShowAgilidadAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, ShowAgilidadAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShowAgilidadAction_MetaData), NewProp_ShowAgilidadAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowDMGAction = { "ShowDMGAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, ShowDMGAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShowDMGAction_MetaData), NewProp_ShowDMGAction_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Vida = { "Vida", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, Vida), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Vida_MetaData), NewProp_Vida_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Agilidad = { "Agilidad", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, Agilidad), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Agilidad_MetaData), NewProp_Agilidad_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_DMG = { "DMG", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATraPra_U1_PEV2_GMCharacter, DMG), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DMG_MetaData), NewProp_DMG_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_FollowCamera,
@@ -494,12 +494,12 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATraPra_U
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_MoveAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_MouseLookAction,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowHealthAction,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowSpeedAction,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowDamageAction,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Health,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Speed,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Damage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowVidaAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowAgilidadAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_ShowDMGAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Vida,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_Agilidad,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::NewProp_DMG,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics::DependentSingletons[])() = {
@@ -538,10 +538,10 @@ ATraPra_U1_PEV2_GMCharacter::~ATraPra_U1_PEV2_GMCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h__Script_TraPra_U1_PEV2_GM_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, ATraPra_U1_PEV2_GMCharacter::StaticClass, TEXT("ATraPra_U1_PEV2_GMCharacter"), &Z_Registration_Info_UClass_ATraPra_U1_PEV2_GMCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATraPra_U1_PEV2_GMCharacter), 3769893027U) },
+		{ Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter, ATraPra_U1_PEV2_GMCharacter::StaticClass, TEXT("ATraPra_U1_PEV2_GMCharacter"), &Z_Registration_Info_UClass_ATraPra_U1_PEV2_GMCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATraPra_U1_PEV2_GMCharacter), 1615285376U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h__Script_TraPra_U1_PEV2_GM_1422772883(TEXT("/Script/TraPra_U1_PEV2_GM"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h__Script_TraPra_U1_PEV2_GM_1914928344(TEXT("/Script/TraPra_U1_PEV2_GM"),
 	Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

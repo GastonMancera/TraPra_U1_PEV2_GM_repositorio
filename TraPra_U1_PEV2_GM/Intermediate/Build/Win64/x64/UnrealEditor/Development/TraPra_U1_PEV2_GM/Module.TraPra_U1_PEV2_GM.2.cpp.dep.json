@@ -364,7 +364,12 @@
             "c:\\users\\fredo\\desktop\\repositorio git hub\\trapra_u1_pev2_gm_repositotio\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\unrealeditor\\inc\\trapra_u1_pev2_gm\\uht\\combatplayercontroller.generated.h",
             "c:\\users\\fredo\\desktop\\repositorio git hub\\trapra_u1_pev2_gm_repositotio\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\variant_combat\\combatgamemode.cpp",
             "c:\\users\\fredo\\desktop\\repositorio git hub\\trapra_u1_pev2_gm_repositotio\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\variant_combat\\combatgamemode.h",
-            "c:\\users\\fredo\\desktop\\repositorio git hub\\trapra_u1_pev2_gm_repositotio\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\unrealeditor\\inc\\trapra_u1_pev2_gm\\uht\\combatgamemode.generated.h"
+            "c:\\users\\fredo\\desktop\\repositorio git hub\\trapra_u1_pev2_gm_repositotio\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\unrealeditor\\inc\\trapra_u1_pev2_gm\\uht\\combatgamemode.generated.h",
+            "c:\\users\\fredo\\desktop\\repositorio git hub\\trapra_u1_pev2_gm_repositotio\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\variant_combat\\combatplayercontroller.cpp",
+            "c:\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\playerstart.h",
+            "c:\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\navigationobjectbase.h",
+            "c:\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\navigationobjectbase.generated.h",
+            "c:\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\playerstart.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

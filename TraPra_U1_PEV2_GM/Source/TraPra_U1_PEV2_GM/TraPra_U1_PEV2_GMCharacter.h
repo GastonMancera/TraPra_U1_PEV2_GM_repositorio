@@ -3,39 +3,35 @@
 #pragma once
 
 // Se añaden los headers de las bibliotecas o archivos que van a ser utilizados en este archivo header.
-#include "CoreMinimal.h"
-#include "GameFramework/Character.h"
-#include "Logging/LogMacros.h"
-#include "InputMappingContext.h"
-#include "TraPra_U1_PEV2_GMCharacter.generated.h"
+#include "CoreMinimal.h" // Incluye las cabeceras basicas y tipos esenciales de Unreal Engine
+#include "GameFramework/Character.h" // Incluye la clase base ACharacter que proporciona funcionalidad de personaje jugable
+#include "Logging/LogMacros.h"  // Incluye macros para crear categorias de log (mensajes de depuracion)
+#include "InputMappingContext.h" //Para el mapeo de inputs 
+#include "TraPra_U1_PEV2_GMCharacter.generated.h" // Genera codigo adicional necesario para el sistema de reflection y blueprints de Unreal
 
-// Se declaran las clases y estructuras que van a ser utilizadas en el archivo header
-class USpringArmComponent;
-class UCameraComponent;
-class UInputAction;
-class UInputMappingContext;
-struct FInputActionValue;
+// Se declaran las clases y estructuras  utilizadas en el header
+class USpringArmComponent; // Declaracion adelantada de la clase USpringArmComponent
+class UCameraComponent; // Declaracion adelantada de la clase UCameraComponent 
+class UInputAction; // Declaracion adelantada de la clase UInputAction 
+class UInputMappingContext; // Declaracion adelantada de la clase MappingAction 
+struct FInputActionValue; // Declaracion adelantada de la clase UInputAction 
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
-/**
- *  A simple player-controllable third person character
- *  Implements a controllable orbiting camera
- */
+
 
  // Crea la clase del personaje y la asigna como pública.
-UCLASS(abstract)
+UCLASS(abstract) // Define UCLASS como abstracta
 class ATraPra_U1_PEV2_GMCharacter : public ACharacter
 {
+	// necesario para reflection, serializacion y blueprint
 	GENERATED_BODY()
 
-	/** Camera boom positioning the camera behind the character */
-	// Determina las propiedades de Unreal de CameraBoom
+	/** posiciona el brazo de la camara detras del personaje */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
 
-	/** Follow camera */
-	// Determina las propiedades de Unreal de FollowCamera
+	/** seguimiento de camara */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
 
@@ -43,53 +39,47 @@ class ATraPra_U1_PEV2_GMCharacter : public ACharacter
 	UInputMappingContext* DefaultMappingContext;
 
 protected:
-	// Las siguientes acciones/inputs están protegidas, su modificación es limitada o restringida.
-
-	/** Jump Input Action */
-	// Determina las propiedades de de Unreal de la acción saltar
+	/** Jump */
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* JumpAction;
 
-	/** Move Input Action */
-	// Determina las propiedades de de Unreal de la acción moverse
+	/** Move Input */
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* MoveAction;
 
-	/** Look Input Action */
-	// Determina las propiedades de de Unreal de la acción mirar
+	/** Mirar Input  */
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* LookAction;
 
-	/** Mouse Look Input Action */
-	// Determina las propiedades de de Unreal de la acción mirar con el mouse
+	/** Mirar con Mouse  Input */
 	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* MouseLookAction;
 
 	UPROPERTY(EditAnywhere, Category = "Input")
-	UInputAction* ShowHealthAction;
+	UInputAction* ShowVidaAction;
 
 	UPROPERTY(EditAnywhere, Category = "Input")
-	UInputAction* ShowSpeedAction;
+	UInputAction* ShowAgilidadAction;
 
 	UPROPERTY(EditAnywhere, Category = "Input")
-	UInputAction* ShowDamageAction;
+	UInputAction* ShowDMGAction;
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
-	int Health;
+	int Vida;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
-	int Speed;
+	int Agilidad;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
-	int Damage;
+	int DMG;
 
 public:
 
 	/** Constructor */
-	// Crea el constructor de la clase, el cual se carga en la memoria previo al inicio
+
 	ATraPra_U1_PEV2_GMCharacter();
 
 protected:
@@ -130,17 +120,16 @@ public:
 	virtual void DoJumpEnd();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	void ShowHealth();
+	void ShowVida();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	void ShowSpeed();
+	void ShowAgilidad();
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	void ShowDamage();
+	void ShowDMG();
 
 public:
-	// Acá me mataste Kent, esto no lo llegue a ver en clase jajajaja
-	// Imagino que genera o utiliza punteros para devolver valores de CameraBoom y FollowCamera
+
 
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }

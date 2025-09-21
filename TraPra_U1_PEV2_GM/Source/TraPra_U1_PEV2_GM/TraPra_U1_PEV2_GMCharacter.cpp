@@ -1,18 +1,18 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 // Se añaden los headers de las bibliotecas o archivos que van a ser utilizados. Ej.: #include "TraPra_U1_PEV2_GMCharacter.h" referencia al header de este archivo .cpp
-#include "TraPra_U1_PEV2_GMCharacter.h"
-#include "Engine/LocalPlayer.h"
-#include "Camera/CameraComponent.h"
-#include "Components/CapsuleComponent.h"
-#include "GameFramework/CharacterMovementComponent.h"
-#include "GameFramework/SpringArmComponent.h"
-#include "GameFramework/Controller.h"
-#include "EnhancedInputComponent.h"
-#include "EnhancedInputSubsystems.h"
-#include "InputMappingContext.h"
-#include "InputActionValue.h"
-#include "TraPra_U1_PEV2_GM.h"
+#include "TraPra_U1_PEV2_GMCharacter.h" // Incluye el header de la clase para poder definir sus funciones
+#include "Engine/LocalPlayer.h" // Permite acceder a informacion del jugador local
+#include "Camera/CameraComponent.h" // Necesario para usar la camara en tercera persona
+#include "Components/CapsuleComponent.h" // Necesario para usar el componente capsula 
+#include "GameFramework/CharacterMovementComponent.h" // Acceso al movimiento del Character
+#include "GameFramework/SpringArmComponent.h" // Permite el uso del brazo de camara
+#include "GameFramework/Controller.h" // Para controlar rotacion e input del jugador
+#include "EnhancedInputComponent.h" // Permite el sistema de Input mejorado 
+#include "EnhancedInputSubsystems.h" // Subsistema para manejar los mapeos de input
+#include "InputMappingContext.h" //Para el mapeo de inputs 
+#include "InputActionValue.h" // Tipo de dato usado por Enhanced Input para manejar valores de accion
+#include "TraPra_U1_PEV2_GM.h" // Header del proyecto
 
 
 
@@ -21,92 +21,84 @@ ATraPra_U1_PEV2_GMCharacter::ATraPra_U1_PEV2_GMCharacter()
 {
 	PrimaryActorTick.bCanEverTick = true;
 
-	Health = 100;
-	Speed = 100;
-	Damage = 10;
+	Vida = 40;
+	Agilidad = 60;
+	DMG = 150;
 
-	// Set size for collision capsule
-	// Mediante GetCapsuleComponent() toma el componente de capsula, lo inicializa y le asigna un tamaño.
+	// tamano de la capsula de colision del personaje
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
-	// Don't rotate when the controller rotates. Let that just affect the camera. 
-	// Como el personaje es en 3ra persona, desactiva los cambios de la cámara por el Pitch, Yaw y Roll del controlador. 
+	// Permite que solo la camara rote, no el cuerpo del Character.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
-	// Configure character movement
-	// Mediante GetCharacterMovement() toma el movimiento del personaje y primero, activa la rotación en base al mismo. Segundo, modifica el grado de rotación.
+	// Configura el personaje para que se oriente automaticamente hacia la direccion de movimiento
 	GetCharacterMovement()->bOrientRotationToMovement = true;
+	// Establece la velocidad de rotacion del personaje
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 500.0f, 0.0f);
 
-	// Note: For faster iteration times these variables, and many more, can be tweaked in the Character Blueprint
-	// instead of recompiling to adjust them
-	// Mediante GetCharacterMovement() toma el movimiento del personaje para ajustar la velocidad de salto, el control en el aire, la velocidad máxima y mínima de caminata 
-	// y además, la desaceleración de freno al caminar y caer
-	GetCharacterMovement()->JumpZVelocity = 1000.f; // Dupliqué la velocidad de salto de 500 a 1000 unidades
-	GetCharacterMovement()->AirControl = 0.1f; // Aumenté el AirControl de 0.35 a 1
-	GetCharacterMovement()->MaxWalkSpeed = 1500.f; // Tripliqué la velocidad máxima de caminata de 500 a 1500
+	//  Control en el aire,  Velocidad maxima de caminata, Velocidad minima para movimiento, Desaceleracion al soltar y Desaceleracion cuando cae y altere algunos de sus valores
+	GetCharacterMovement()->JumpZVelocity = 600.f; 
+	GetCharacterMovement()->AirControl = 0.31f; 
+	GetCharacterMovement()->MaxWalkSpeed = 600.f; 
 	GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 
-	// Create a camera boom (pulls in towards the player if there is a collision)
-	// Mediante CreateDefaultSubobject<> crea un componente de spring para la cámara, le asigna un nombre, le asigna una jerarquía, 
-	// le asigna una longitud y por último, activa la rotación en base al pawn.
+
+	// crea el brazo de la camara y sus configuraciones basicas de el largo del brazo, que la rotacion siga el personaje y la raiz
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 600.0f; // Aumenté la longitud de CameraBoom de 400 a 600
+	CameraBoom->TargetArmLength = 400.0f; 
 	CameraBoom->bUsePawnControlRotation = true;
 
-	// Create a follow camera
-	// Mediante CreateDefaultSubobject<> crea un componente de cámara que sigue al character, le asigna un nombre al componente, le asigna una sub-jerarquía respecto a CameraBoom,
-	// y desactiva la rotación respecto al pawn.
+	// Crea el seguimiento de la camara
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 
-	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
-	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
 }
 
 
-
-void ATraPra_U1_PEV2_GMCharacter::ShowHealth()
+// Inputs
+void ATraPra_U1_PEV2_GMCharacter::ShowVida()
 {
+	
 	if (GEngine) // GEngine si existe muestro mensaje
 	{
 		GEngine->AddOnScreenDebugMessage(
 			-1,//Esto es el key
-			5.0f,// esto es el tiempo que va permanecer
-			FColor::Red, // esto es el color
-			FString::Printf(TEXT("La vida actual es: %d"), Health) //FString::Printf(TEXT("Hola soy TestItem")) // y esto es el mensaje a mostrar en pantalla
+			10.0f,// esto es el tiempo que va permanecer
+			FColor::Cyan, // esto es el color
+			FString::Printf(TEXT("La vida actual es: %d"), Vida) //mensaje a mostrar en pantalla
 		);
 	}
 }
 
-void ATraPra_U1_PEV2_GMCharacter::ShowSpeed()
+void ATraPra_U1_PEV2_GMCharacter::ShowAgilidad()
 {
 	if (GEngine) // GEngine si existe muestro mensaje
 	{
 		GEngine->AddOnScreenDebugMessage(
 			-1,//Esto es el key
-			5.0f,// esto es el tiempo que va permanecer
-			FColor::Red, // esto es el color
-			FString::Printf(TEXT("La velocidad actual es: %d"), Speed) // y esto es el mensaje a mostrar en pantalla
+			10.0f,// esto es el tiempo que va permanecer
+			FColor::Cyan, // esto es el color
+			FString::Printf(TEXT("La Agilidad actual es: %d"), Agilidad) //  mensaje a mostrar en pantalla
 		);
 	}
 }
 
-void ATraPra_U1_PEV2_GMCharacter::ShowDamage()
+void ATraPra_U1_PEV2_GMCharacter::ShowDMG()
 {
 	if (GEngine) // GEngine si existe muestro mensaje
 	{
 		GEngine->AddOnScreenDebugMessage(
 			-1,//Esto es el key
-			5.0f,// esto es el tiempo que va permanecer
-			FColor::Red, // esto es el color
-			FString::Printf(TEXT("El dano actual es es: %d"), Damage) // y esto es el mensaje a mostrar en pantalla
+			10.0f,// esto es el tiempo que va permanecer
+			FColor::Cyan, // esto es el color
+			FString::Printf(TEXT("El DMG actual es es: %d"), DMG) //  mensaje a mostrar en pantalla
 		);
 	}
 }
@@ -115,83 +107,86 @@ void ATraPra_U1_PEV2_GMCharacter::ShowDamage()
 // Utiliza dos modelos de inputs: 1- Started & Completed, 2- Triggered. En caso de no encontrar el componente, muestra un mensaje dando aviso.
 void ATraPra_U1_PEV2_GMCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	// Set up action bindings
+	// Configura las acciones de input del jugador usando el sistema Enhanced Input
+
 	if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent)) {
 
-		// Jumping
+		// salto
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &ACharacter::Jump);
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
 
-		// Moving
+		// movimiento
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ATraPra_U1_PEV2_GMCharacter::Move);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &ATraPra_U1_PEV2_GMCharacter::Look);
 
-		// Looking
+		// mirar alrededor
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ATraPra_U1_PEV2_GMCharacter::Look);
 
-		// Stats - Muestra stats como Health, Speed y Damage.
-		EnhancedInputComponent->BindAction(ShowHealthAction, ETriggerEvent::Started, this, &ATraPra_U1_PEV2_GMCharacter::ShowHealth);
-		EnhancedInputComponent->BindAction(ShowSpeedAction, ETriggerEvent::Started, this, &ATraPra_U1_PEV2_GMCharacter::ShowSpeed);
-		EnhancedInputComponent->BindAction(ShowDamageAction, ETriggerEvent::Started, this, &ATraPra_U1_PEV2_GMCharacter::ShowDamage);
+		// Stats - Muestra stats como Vida, Agilidad y DMG.
+		EnhancedInputComponent->BindAction(ShowVidaAction, ETriggerEvent::Started, this, &ATraPra_U1_PEV2_GMCharacter::ShowVida);
+		EnhancedInputComponent->BindAction(ShowAgilidadAction, ETriggerEvent::Started, this, &ATraPra_U1_PEV2_GMCharacter::ShowAgilidad);
+		EnhancedInputComponent->BindAction(ShowDMGAction, ETriggerEvent::Started, this, &ATraPra_U1_PEV2_GMCharacter::ShowDMG);
 
 
 	}
 	else
 	{
+		// Mensaje de error si no se encuentra un EnhancedInputComponent
 		UE_LOG(LogTraPra_U1_PEV2_GM, Error, TEXT("'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. If you intend to use the legacy system, then you will need to update this C++ file."), *GetNameSafe(this));
 	}
 }
 
-// Inicializa la acción/input para moverse mediante un vector 2D. El personaje se mueve en base a los inputs de los ejes X & Y
+// MOVIMIENTO
 void ATraPra_U1_PEV2_GMCharacter::Move(const FInputActionValue& Value)
 {
-	// input is a Vector2D
+	//  el input en un vector 2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
-	// route the input
+	//  Envia el input al metodo interno que aplica el movimiento 
 	DoMove(MovementVector.X, MovementVector.Y);
 }
 
 // Inicializa la acción/input para mirar mediante un vector 2D. El personaje mira en base a los inputs de los ejes X & Y
 void ATraPra_U1_PEV2_GMCharacter::Look(const FInputActionValue& Value)
 {
-	// input is a Vector2D
+	// el input en un vector 2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
 
-	// route the input
+	//  Envia el input al metodo interno que aplica la rotacion 
 	DoLook(LookAxisVector.X, LookAxisVector.Y);
 }
 
-// Esta sección se utiliza para encontrar las direccíones de los vectores de movimiento. Siempre que exista un input de movimiento, primero toma que dirección 
-// es adelante para el character en base a la rotación del Yaw (0).
-// Encuentra el vector delantero y del lado derecho, posteriormente le da movimiento al character con AddMovementInput()
+
 void ATraPra_U1_PEV2_GMCharacter::DoMove(float Right, float Forward)
 {
 	if (GetController() != nullptr)
 	{
-		// find out which way is forward
+		// obtiene la rotacion actual del control
 		const FRotator Rotation = GetController()->GetControlRotation();
+		// Crea un rotador solo con el Yaw
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
-		// get forward vector
+		// Calcula el vector de direccion frontal
 		const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 
-		// get right vector 
+		// Calcula el vector de direccion lateral
 		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 
-		// add movement 
+		// Aplica movimiento 
 		AddMovementInput(ForwardDirection, Forward);
 		AddMovementInput(RightDirection, Right);
 	}
 }
 
-// Esta sección se utiliza para determinar las direccíones de los vectores para mirar (siempre que exista un input para mirar)
+
 void ATraPra_U1_PEV2_GMCharacter::DoLook(float Yaw, float Pitch)
 {
+	// Verifica que el controlador exista antes de rotar
 	if (GetController() != nullptr)
 	{
-		// add yaw and pitch input to controller
+		// Aplica rotacion horizontal
 		AddControllerYawInput(Yaw);
+		// Aplica rotacion vertical
 		AddControllerPitchInput(Pitch);
 	}
 }

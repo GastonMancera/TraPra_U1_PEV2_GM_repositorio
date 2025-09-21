@@ -35,3 +35,4 @@
 #include "C:/Users/Fredo/Desktop/Repositorio Git HUB/TraPra_U1_PEV2_GM_repositotio/TraPra_U1_PEV2_GM/Source/TraPra_U1_PEV2_GM/Variant_Combat/Animation/AnimNotify_DoAttackTrace.cpp"
 #include "C:/Users/Fredo/Desktop/Repositorio Git HUB/TraPra_U1_PEV2_GM_repositotio/TraPra_U1_PEV2_GM/Source/TraPra_U1_PEV2_GM/Variant_Combat/CombatCharacter.cpp"
 #include "C:/Users/Fredo/Desktop/Repositorio Git HUB/TraPra_U1_PEV2_GM_repositotio/TraPra_U1_PEV2_GM/Source/TraPra_U1_PEV2_GM/Variant_Combat/CombatGameMode.cpp"
+#include "C:/Users/Fredo/Desktop/Repositorio Git HUB/TraPra_U1_PEV2_GM_repositotio/TraPra_U1_PEV2_GM/Source/TraPra_U1_PEV2_GM/Variant_Combat/CombatPlayerController.cpp"
