@@ -218,14 +218,14 @@ ACombatCheckpointVolume::~ACombatCheckpointVolume() {}
 // ********** End Class ACombatCheckpointVolume ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_Statics
+struct Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ACombatCheckpointVolume, ACombatCheckpointVolume::StaticClass, TEXT("ACombatCheckpointVolume"), &Z_Registration_Info_UClass_ACombatCheckpointVolume, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACombatCheckpointVolume), 3766363684U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_3319625951(TEXT("/Script/TraPra_U1_PEV2_GM"),
-	Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_3319625951(TEXT("/Script/TraPra_U1_PEV2_GM"),
+	Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatCheckpointVolume_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

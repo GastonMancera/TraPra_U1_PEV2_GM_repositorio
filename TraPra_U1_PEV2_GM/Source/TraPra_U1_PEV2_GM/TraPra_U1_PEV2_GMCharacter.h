@@ -2,93 +2,151 @@
 
 #pragma once
 
-#include "CoreMinimal.h" // Incluye las cabeceras basicas y tipos esenciales de Unreal Engine
-#include "GameFramework/Character.h" // Incluye la clase base ACharacter que proporciona funcionalidad de personaje jugable
-#include "Logging/LogMacros.h" // Incluye macros para crear categorias de log (mensajes de depuracion)
-#include "TraPra_U1_PEV2_GMCharacter.generated.h" / Genera codigo adicional necesario para el sistema de reflection y blueprints de Unreal
+// Se añaden los headers de las bibliotecas o archivos que van a ser utilizados en este archivo header.
+#include "CoreMinimal.h"
+#include "GameFramework/Character.h"
+#include "Logging/LogMacros.h"
+#include "InputMappingContext.h"
+#include "TraPra_U1_PEV2_GMCharacter.generated.h"
 
-class USpringArmComponent; // Declaracion adelantada de la clase USpringArmComponent (brazo de camara)
-class UCameraComponent; // Declaracion adelantada de la clase UCameraComponent (camara)
-class UInputAction; // Declaracion adelantada de la clase UInputAction (acciones de entrada)
-struct FInputActionValue; // Declaracion adelantada de la estructura FInputActionValue (valor de entrada de una accion)
- 
-DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All); // Declara una categoria de log externa llamada LogTemplateCharacter para depuracion
+// Se declaran las clases y estructuras que van a ser utilizadas en el archivo header
+class USpringArmComponent;
+class UCameraComponent;
+class UInputAction;
+class UInputMappingContext;
+struct FInputActionValue;
 
+DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
-UCLASS(abstract) // Define UCLASS como abstracta
+/**
+ *  A simple player-controllable third person character
+ *  Implements a controllable orbiting camera
+ */
+
+ // Crea la clase del personaje y la asigna como pública.
+UCLASS(abstract)
 class ATraPra_U1_PEV2_GMCharacter : public ACharacter
 {
-	// necesario para reflection, serializacion y blueprint
 	GENERATED_BODY()
 
-	/** posiciona el brazo de la camara detras del personaje */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
+	/** Camera boom positioning the camera behind the character */
+	// Determina las propiedades de Unreal de CameraBoom
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraBoom;
 
-	/** seguimiento de camara */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
+	/** Follow camera */
+	// Determina las propiedades de Unreal de FollowCamera
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
-	
-protected:
 
-	/** Jump */
-	UPROPERTY(EditAnywhere, Category="Input")
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputMappingContext* DefaultMappingContext;
+
+protected:
+	// Las siguientes acciones/inputs están protegidas, su modificación es limitada o restringida.
+
+	/** Jump Input Action */
+	// Determina las propiedades de de Unreal de la acción saltar
+	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* JumpAction;
 
-	/** Move Input */
-	UPROPERTY(EditAnywhere, Category="Input")
+	/** Move Input Action */
+	// Determina las propiedades de de Unreal de la acción moverse
+	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* MoveAction;
 
-	/** Mirar Input  */
-	UPROPERTY(EditAnywhere, Category="Input")
+	/** Look Input Action */
+	// Determina las propiedades de de Unreal de la acción mirar
+	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* LookAction;
 
-	/** Mirar con Mouse  Input */
-	UPROPERTY(EditAnywhere, Category="Input")
+	/** Mouse Look Input Action */
+	// Determina las propiedades de de Unreal de la acción mirar con el mouse
+	UPROPERTY(EditAnywhere, Category = "Input")
 	UInputAction* MouseLookAction;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* ShowHealthAction;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* ShowSpeedAction;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	UInputAction* ShowDamageAction;
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	int Health;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	int Speed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	int Damage;
 
 public:
 
-	/** Clase Constructor */
-	ATraPra_U1_PEV2_GMCharacter();	
+	/** Constructor */
+	// Crea el constructor de la clase, el cual se carga en la memoria previo al inicio
+	ATraPra_U1_PEV2_GMCharacter();
 
 protected:
 
-	//Funcion que inicializa el mapeo de entradas del jugador, override de ACharacter
+	virtual void BeginPlay() override;
+
+	/** Initialize input action bindings */
+	// Crea/inicializa el componente de inputs del jugador con un virtual void. Esto se puede ejecutar por defecto si el diseñador no realiza un override
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 protected:
+	// Crea las acciones de movimiento y mirar
 
-	// Funcion que se llama cuando hay entrada de movimiento
+	/** Called for movement input */
 	void Move(const FInputActionValue& Value);
 
-	// Funcion que se llama cuando hay entrada de mirar/camara
+	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
 
 public:
+	// Crea y asigna propiedades de Unreal a la ejecucion de acciones (por controles o UI) mediante un virtual void. 
+	// Esto se puede ejecutar por defecto si el diseñador no realiza un override
 
-	// Funcion blueprint-callable para mover el personaje, puede ser llamada desde UI o controles
-	UFUNCTION(BlueprintCallable, Category="Input")
+	/** Handles move inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoMove(float Right, float Forward);
 
-	// Funcion blueprint-callable para mirar/cambiar camara/
-	UFUNCTION(BlueprintCallable, Category="Input")
+	/** Handles look inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoLook(float Yaw, float Pitch);
 
-	// Funcion blueprint-callable para iniciar salto
-	UFUNCTION(BlueprintCallable, Category="Input")
+	/** Handles jump pressed inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpStart();
 
-	// Funcion blueprint-callable para terminar salto
-	UFUNCTION(BlueprintCallable, Category="Input")
+	/** Handles jump pressed inputs from either controls or UI interfaces */
+	UFUNCTION(BlueprintCallable, Category = "Input")
 	virtual void DoJumpEnd();
 
-public:
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void ShowHealth();
 
-	// Funcion que se llama cuando hay entrada de movimiento
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void ShowSpeed();
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+	void ShowDamage();
+
+public:
+	// Acá me mataste Kent, esto no lo llegue a ver en clase jajajaja
+	// Imagino que genera o utiliza punteros para devolver valores de CameraBoom y FollowCamera
+
+	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 
-	// Funcion que se llama cuando hay entrada de mirar/camara
+	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
-};
 
+
+};

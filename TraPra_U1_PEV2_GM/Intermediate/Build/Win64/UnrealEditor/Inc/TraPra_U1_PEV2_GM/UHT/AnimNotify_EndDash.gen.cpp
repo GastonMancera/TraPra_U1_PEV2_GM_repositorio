@@ -106,14 +106,14 @@ UAnimNotify_EndDash::~UAnimNotify_EndDash() {}
 // ********** End Class UAnimNotify_EndDash ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_Statics
+struct Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UAnimNotify_EndDash, UAnimNotify_EndDash::StaticClass, TEXT("UAnimNotify_EndDash"), &Z_Registration_Info_UClass_UAnimNotify_EndDash, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAnimNotify_EndDash), 3857615680U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_2339145967(TEXT("/Script/TraPra_U1_PEV2_GM"),
-	Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_2339145967(TEXT("/Script/TraPra_U1_PEV2_GM"),
+	Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Platforming_Animation_AnimNotify_EndDash_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

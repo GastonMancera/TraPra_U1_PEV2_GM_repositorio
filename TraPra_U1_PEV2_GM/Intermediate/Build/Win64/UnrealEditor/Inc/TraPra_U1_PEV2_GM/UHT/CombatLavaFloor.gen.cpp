@@ -228,14 +228,14 @@ ACombatLavaFloor::~ACombatLavaFloor() {}
 // ********** End Class ACombatLavaFloor ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_Statics
+struct Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ACombatLavaFloor, ACombatLavaFloor::StaticClass, TEXT("ACombatLavaFloor"), &Z_Registration_Info_UClass_ACombatLavaFloor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACombatLavaFloor), 1450242458U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_1302462033(TEXT("/Script/TraPra_U1_PEV2_GM"),
-	Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_1302462033(TEXT("/Script/TraPra_U1_PEV2_GM"),
+	Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_Variant_Combat_Gameplay_CombatLavaFloor_h__Script_TraPra_U1_PEV2_GM_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

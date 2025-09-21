@@ -87,5 +87,5 @@
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_NAME="Third Person Game Template"
 /DPROJECT_PRODUCT_IDENTIFIER=TraPra_U1_PEV2_GM
-/fo "C:/Users/Fredo/Desktop/UnrealC++/TraPra_U1_PEV2_GM/Intermediate/Build/Win64/x64/UnrealEditor/Development/TraPra_U1_PEV2_GM/Default.rc2.res"
+/fo "C:/Users/Fredo/Desktop/Repositorio Git HUB/TraPra_U1_PEV2_GM_repositotio/TraPra_U1_PEV2_GM/Intermediate/Build/Win64/x64/UnrealEditor/Development/TraPra_U1_PEV2_GM/Default.rc2.res"
 "../Build/Windows/Resources/Default.rc2"

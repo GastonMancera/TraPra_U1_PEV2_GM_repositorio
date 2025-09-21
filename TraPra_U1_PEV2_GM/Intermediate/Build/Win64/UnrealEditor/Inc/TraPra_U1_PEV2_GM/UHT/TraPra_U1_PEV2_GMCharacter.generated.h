@@ -17,7 +17,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ATraPra_U1_PEV2_GMCharacter **********************************************
-#define FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execShowDamage); \
+	DECLARE_FUNCTION(execShowSpeed); \
+	DECLARE_FUNCTION(execShowHealth); \
 	DECLARE_FUNCTION(execDoJumpEnd); \
 	DECLARE_FUNCTION(execDoJumpStart); \
 	DECLARE_FUNCTION(execDoLook); \
@@ -26,7 +29,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 TRAPRA_U1_PEV2_GM_API UClass* Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_NoRegister();
 
-#define FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_24_INCLASS_NO_PURE_DECLS \
+#define FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_30_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATraPra_U1_PEV2_GMCharacter(); \
 	friend struct Z_Construct_UClass_ATraPra_U1_PEV2_GMCharacter_Statics; \
@@ -37,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(ATraPra_U1_PEV2_GMCharacter)
 
 
-#define FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_24_ENHANCED_CONSTRUCTORS \
+#define FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_30_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ATraPra_U1_PEV2_GMCharacter(ATraPra_U1_PEV2_GMCharacter&&) = delete; \
 	ATraPra_U1_PEV2_GMCharacter(const ATraPra_U1_PEV2_GMCharacter&) = delete; \
@@ -47,13 +50,13 @@ public: \
 	NO_API virtual ~ATraPra_U1_PEV2_GMCharacter();
 
 
-#define FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_21_PROLOG
-#define FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_24_GENERATED_BODY \
+#define FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_27_PROLOG
+#define FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_24_INCLASS_NO_PURE_DECLS \
-	FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_24_ENHANCED_CONSTRUCTORS \
+	FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_30_INCLASS_NO_PURE_DECLS \
+	FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +66,6 @@ class ATraPra_U1_PEV2_GMCharacter;
 // ********** End Class ATraPra_U1_PEV2_GMCharacter ************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_Fredo_Desktop_UnrealC___TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h
+#define CURRENT_FILE_ID FID_Users_Fredo_Desktop_Repositorio_Git_HUB_TraPra_U1_PEV2_GM_repositotio_TraPra_U1_PEV2_GM_Source_TraPra_U1_PEV2_GM_TraPra_U1_PEV2_GMCharacter_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

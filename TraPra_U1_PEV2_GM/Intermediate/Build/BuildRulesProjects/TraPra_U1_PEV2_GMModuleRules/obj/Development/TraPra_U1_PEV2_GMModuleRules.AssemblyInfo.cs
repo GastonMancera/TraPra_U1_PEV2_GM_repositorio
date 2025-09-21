@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TraPra_U1_PEV2_GMModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebcdf72b3597bc3ed3d1348810f4bec83191cd34")]
 [assembly: System.Reflection.AssemblyProductAttribute("TraPra_U1_PEV2_GMModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TraPra_U1_PEV2_GMModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
