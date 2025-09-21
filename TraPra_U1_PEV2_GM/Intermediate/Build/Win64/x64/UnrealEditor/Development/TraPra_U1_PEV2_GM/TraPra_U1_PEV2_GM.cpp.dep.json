@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\trapra_u1_pev2_gm.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\x64\\trapra_u1_pev2_gmeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\trapra_u1_pev2_gm\\definitions.trapra_u1_pev2_gm.h",
+            "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\trapra_u1_pev2_gm.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

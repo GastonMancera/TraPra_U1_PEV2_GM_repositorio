@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TraPra_U1_PEV2_GM.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TraPra_U1_PEV2_GM.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TraPra_U1_PEV2_GMEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TraPra_U1_PEV2_GM">
+      <UniqueIdentifier>{AC137AC8-C3D6-31B5-8E67-1A088E072B4E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GM.Build.cs">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GM.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GM.h">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GMCharacter.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GMCharacter.h">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GMGameMode.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GMGameMode.h">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GMPlayerController.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\TraPra_U1_PEV2_GMPlayerController.h">
+      <Filter>Source\TraPra_U1_PEV2_GM</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Combat">
+      <UniqueIdentifier>{0CD09C31-0BB6-36DC-A107-3EC4DE0FC662}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\CombatCharacter.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\CombatCharacter.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\CombatGameMode.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\CombatGameMode.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\CombatPlayerController.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\CombatPlayerController.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Combat\AI">
+      <UniqueIdentifier>{986ABB64-981A-32CE-A2A8-00A6004C8C87}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatAIController.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatAIController.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatEnemy.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatEnemy.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatEnemySpawner.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatEnemySpawner.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatStateTreeUtility.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\CombatStateTreeUtility.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\EnvQueryContext_Player.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\AI\EnvQueryContext_Player.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation">
+      <UniqueIdentifier>{79277512-C948-303B-8087-8F865A1D1F71}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation\AnimNotify_CheckCombo.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation\AnimNotify_CheckCombo.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation\AnimNotify_DoAttackTrace.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay">
+      <UniqueIdentifier>{0FC5A04C-3B36-34EB-8F3B-FE4AD19EDF93}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatActivationVolume.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatActivationVolume.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatCheckpointVolume.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatCheckpointVolume.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatDamageableBox.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatDamageableBox.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatDummy.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatDummy.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatLavaFloor.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay\CombatLavaFloor.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces">
+      <UniqueIdentifier>{42BB841E-8D8B-3B99-AB3E-4112DA74E92F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces\CombatActivatable.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces\CombatActivatable.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces\CombatAttacker.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces\CombatAttacker.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces\CombatDamageable.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces\CombatDamageable.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Combat\UI">
+      <UniqueIdentifier>{49042B3C-4883-376C-B0C6-0A05F5DBF5B2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\UI\CombatLifeBar.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Combat\UI\CombatLifeBar.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Combat\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Platforming">
+      <UniqueIdentifier>{3CD08833-000F-38FE-A9A8-9A56EE2F7406}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\PlatformingCharacter.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\PlatformingCharacter.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\PlatformingGameMode.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\PlatformingGameMode.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\PlatformingPlayerController.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\PlatformingPlayerController.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_Platforming\Animation">
+      <UniqueIdentifier>{0CDC9181-DA97-3096-B954-F08BC9BE0CA6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\Animation\AnimNotify_EndDash.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_Platforming\Animation\AnimNotify_EndDash.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_Platforming\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_SideScrolling">
+      <UniqueIdentifier>{69E13E28-D5E0-350D-8F1B-DCB16CFC978B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingCameraManager.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingCameraManager.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingCharacter.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingCharacter.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingGameMode.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingGameMode.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingPlayerController.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\SideScrollingPlayerController.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI">
+      <UniqueIdentifier>{07DD5662-CD98-3910-A0AD-15020468906A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI\SideScrollingAIController.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI\SideScrollingAIController.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI\SideScrollingNPC.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI\SideScrollingNPC.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay">
+      <UniqueIdentifier>{D1B236D2-2BEA-356A-B6FA-D6ED76866A8F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingPickup.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingPickup.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Interfaces">
+      <UniqueIdentifier>{451E628E-D68E-3531-B40F-43E4D6BDCA63}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Interfaces\SideScrollingInteractable.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\UI">
+      <UniqueIdentifier>{4C924C9B-69CE-3439-B53D-A5D0956BC998}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\UI\SideScrollingUI.cpp">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\UI\SideScrollingUI.h">
+      <Filter>Source\TraPra_U1_PEV2_GM\Variant_SideScrolling\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

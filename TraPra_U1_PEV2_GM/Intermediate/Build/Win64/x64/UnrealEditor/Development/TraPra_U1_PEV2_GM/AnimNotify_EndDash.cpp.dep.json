@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\variant_platforming\\animation\\animnotify_enddash.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\x64\\trapra_u1_pev2_gmeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\trapra_u1_pev2_gm\\definitions.trapra_u1_pev2_gm.h",
+            "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\variant_platforming\\animation\\animnotify_enddash.h",
+            "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\unrealeditor\\inc\\trapra_u1_pev2_gm\\uht\\animnotify_enddash.generated.h",
+            "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\source\\trapra_u1_pev2_gm\\variant_platforming\\platformingcharacter.h",
+            "c:\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\ue_5.6\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "c:\\ue_5.6\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\fredo\\desktop\\unrealc++\\trapra_u1_pev2_gm\\intermediate\\build\\win64\\unrealeditor\\inc\\trapra_u1_pev2_gm\\uht\\platformingcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

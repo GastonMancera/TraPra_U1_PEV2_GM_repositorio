@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TraPra_U1_PEV2_GM",
+			"Path": "..\\Source\\TraPra_U1_PEV2_GM.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TraPra_U1_PEV2_GMEditor",
+			"Path": "..\\Source\\TraPra_U1_PEV2_GMEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
